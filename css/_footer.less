@@ -1,0 +1,92 @@
+footer {
+    width: 100%;
+    height: 120px;
+    background-color: @footer-background-color;
+    border: none;
+    margin-top: 50px;
+    box-shadow: @box-shadow;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    .sign-container {
+        margin-bottom: 10px;
+        margin-left: 10px;
+        display: flex;
+        text-align: center;
+        align-items: flex-end;
+        p {
+            padding-left: 20px;
+            color: @footer-font-color;
+        }
+    }
+    .social-container {
+        margin-bottom: 10px;
+        display: flex;
+        align-items: flex-end;
+        justify-content: flex-end;
+        text-align: center;
+        ul{
+            display: flex;
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+            padding-right: 40px;
+            li{
+                position: relative;
+                width: 45px;
+                height: 45px;
+                margin: 0 20px;
+                border-radius: 50%;
+                box-sizing: border-box;
+                cursor: pointer;
+                transition: .5s;
+                overflow: hidden;
+                box-shadow: @social-box-shadow;
+                .fab{
+                    font-size: 25px;
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                    transition: .5s;
+                }
+            }
+            li:nth-child(1) .fab{
+                color: #38A1F3;
+            }
+            li:nth-child(2) .fab{
+                color: #d72888;
+            }
+            li:nth-child(3) .fab{
+                color: rgb(36,41,46);
+            }
+            li:nth-child(4) .fab{
+                color: #3B5998;
+            }
+            li:hover:nth-child(1){
+                background: #38A1F3;
+            }
+            li:hover:nth-child(2){
+                background: #d72888;
+            }
+            li:hover:nth-child(3){
+                background: rgb(36,41,46);
+            }
+            li:hover:nth-child(4){
+                background: #3B5998;
+            }
+            li .fab:nth-child(1){
+                left: -50%;
+                opacity: 0;
+            }
+            li:hover .fab:nth-child(1){
+                left: 50%;
+                opacity: 1;
+                color: white;
+            }
+            li:hover .fab:nth-child(2){
+                left: 150%;
+                opacity: 0;
+            }
+        }
+    }
+}
