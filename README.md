@@ -1,6 +1,8 @@
 # My Portfolio
 Este es mi portafolio el cual ire mejorandolo a pasar el tiempo mientras añado los proyecto que ire creando ;)
 
+<img src="/ss1.png">
+
 ## Lenguajes:
  - HTML5
  - CSS (Less)
@@ -13,5 +15,3 @@ Este es mi portafolio el cual ire mejorandolo a pasar el tiempo mientras añado 
  - Google Dev Tools
  - Adobe xd (Mockup)
  - Zeplin (Style guide)
-
-<img src="/ss1.png">
